@@ -1,0 +1,22 @@
+# OS
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Editor
+.vscode/
+.idea/
+*.swp
+
+# Logs & temp
+*.log
+npm-debug.log*
+tmp/
+temp/
+
+# Dependencies (jika nanti pakai npm)
+node_modules/
+
+# Env / secrets
+.env
+.env.*

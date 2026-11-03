@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Papan Skor Domino</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+<h1>Papan Skor Domino</h1>
+<div class="big"><span>POIN BESAR</span><b id="b0">0</b><i>–</i><b id="b1">0</b></div>
+<div class="board">
+  <section class="tile a" id="t0">
+    <input class="name" id="n0" aria-label="Nama tim A">
+    <div class="score" id="s0">0</div>
+    <div class="pips" id="p0"><span class="pip"></span><span class="pip"></span><span class="pip"></span><span class="pip"></span><span class="pip"></span><span class="pip"></span><span class="pip"></span></div>
+    <div class="btns"><button class="plus" data-t="0" data-p="1">+1 domi</button><button class="plus" data-t="0" data-p="2">+2 palang</button><button class="plus" data-t="0" data-p="3">+3 tangkap</button><button class="plus" data-t="0" data-p="4">+4 ceki habis</button><button class="minus" data-t="0" data-p="-1">−1</button></div>
+  </section>
+  <section class="tile b" id="t1">
+    <input class="name" id="n1" aria-label="Nama tim B">
+    <div class="score" id="s1">0</div>
+    <div class="pips" id="p1"><span class="pip"></span><span class="pip"></span><span class="pip"></span><span class="pip"></span><span class="pip"></span><span class="pip"></span><span class="pip"></span></div>
+    <div class="btns"><button class="plus" data-t="1" data-p="1">+1 domi</button><button class="plus" data-t="1" data-p="2">+2 palang</button><button class="plus" data-t="1" data-p="3">+3 tangkap</button><button class="plus" data-t="1" data-p="4">+4 ceki habis</button><button class="minus" data-t="1" data-p="-1">−1</button></div>
+  </section>
+</div>
+<div class="ctrl"><button id="undo">↶ Undo</button><button id="newRound">Ronde Baru</button><button id="reset">Reset Semua</button></div>
+<div class="log" id="log"></div>
+</main>
+<div class="ez" id="ez" role="dialog" aria-live="assertive">
+  <h2 id="ezText">EZ DEK</h2>
+  <p id="ezWho"></p>
+  <button id="ezClose">Lanjut</button>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
